@@ -36,6 +36,10 @@
 
 let arr = [widget, gadget, thingamabob];
 
-arr.forEach(e => {
-  e.description = "TODO: GIVE ME A DESCRIPTION"
+let parent = {
+  description: "TODO: GIVE ME A DESCRIPTION"
+};
+
+arr.forEach(child => {
+  Object.setPropertyOf(child, parent);
 });
